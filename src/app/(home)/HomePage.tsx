@@ -41,7 +41,7 @@ export function HomePage() {
                        className="w-full h-full object-cover absolute top-0 left-0 bg-bottom"/>
                 <div className="w-full h-full absolute top-0 left-0 bg-primary/20"></div>
                 <div className="text-center py-10 px-4 z-10 text-white flex items-center flex-col">
-                    <h1 className="text-7xl font-bold md:bg-black/50 backdrop-blur-md w-fit">Silent Voices</h1>
+                    <h1 className="text-7xl font-bold md:bg-black/50 backdrop-blur-md w-fit">Echoed Silence</h1>
                     <p className="text-3xl mt-4 md:bg-black/50 backdrop-blur-md">Accounting for the Victims of Police
                         Brutality in Kenya</p>
                     <Button variant="solid" color="primary" className="mt-8 hidden md:flex"

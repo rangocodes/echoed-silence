@@ -49,7 +49,7 @@ export function CustomNavbar() {
                 />
                 <NavbarBrand className="flex gap-4 items-center">
                     <Image className="h-[40px] w-[40px] border border-primary p-1 rounded-lg flex-shrink-0 md:h-[50px] md:w-[50px] scale-x-[-1]" src={"/images/logo.svg"} alt={"logo"} width={200} height={200}/>
-                    <h2 className="font-bold text-inherit text-xl md:text-2xl uppercase">Silent Voices</h2>
+                    <h2 className="font-bold text-inherit text-xl md:text-2xl uppercase">Echoed Silence</h2>
                 </NavbarBrand>
             </NavbarContent>
 
