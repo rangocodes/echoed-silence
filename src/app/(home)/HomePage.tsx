@@ -62,7 +62,7 @@ export function HomePage() {
                                     name={victim.name}
                                     image={victim.photoURL}
                                     id={victim.id}
-                                    actionEmitted={(e) => alert(e)}
+                                    actionEmitted={(e: any) => alert(e)}
                                 />
                             ))
                             :
@@ -87,7 +87,7 @@ export function HomePage() {
                                     name={victim.name}
                                     image={victim.photoURL}
                                     id={victim.id}
-                                    actionEmitted={(e) => alert(e)}
+                                    actionEmitted={(e: any) => alert(e)}
                                 />
                             ))
                             :

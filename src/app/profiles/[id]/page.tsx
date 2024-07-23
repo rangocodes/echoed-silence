@@ -18,7 +18,7 @@ import {GiCandleLight} from "react-icons/gi";
 // }
 
 
-export default function page({params}) {
+export default function page({params}: any) {
     const { id } = params;
     // const router = useRouter();
     // const {id} = router.query;
