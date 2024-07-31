@@ -11,7 +11,7 @@ export default function AppLayoutWrapper(
         children: React.ReactNode;
     }) {
     return (
-        <NextUIProvider className="flex flex-col">
+        <NextUIProvider className="flex flex-col light">
             <CustomNavbar/>
             <div className="mb-20">{children}</div>
             <Footer/>

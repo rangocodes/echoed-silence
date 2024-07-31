@@ -7,6 +7,7 @@ import CardVictims from "@/components/ui/CardVictims";
 import {Skeleton} from "@nextui-org/skeleton";
 import {FaArrowRightLong} from "react-icons/fa6";
 import Image from "next/image";
+import {useRouter} from "next/navigation";
 
 // export async function getStaticProps() {
 //
@@ -19,6 +20,7 @@ import Image from "next/image";
 // }
 
 export function HomePage() {
+    const router = useRouter();
     const [victims, setVictims] = useState<any[]>([]);
 
     useEffect(() => {
@@ -50,7 +52,7 @@ export function HomePage() {
             </header>
 
             <section className="p-8 py-10 bg-white w-full max-w-6xl -mt-20 text-center z-10">
-                <h2 className="text-4xl">Featured Stories</h2>
+                <h2 className="text-4xl">Featured</h2>
                 <div className="grid gap-4 md:grid-cols-4 justify-items-center my-10">
                     {
                         !!victims?.length ?
@@ -62,7 +64,7 @@ export function HomePage() {
                                     name={victim.name}
                                     image={victim.photoURL}
                                     id={victim.id}
-                                    actionEmitted={(e: any) => alert(e)}
+                                    actionEmitted={(e: any) => router.push(`/profiles/${victim.id}`)}
                                 />
                             ))
                             :
@@ -87,7 +89,8 @@ export function HomePage() {
                                     name={victim.name}
                                     image={victim.photoURL}
                                     id={victim.id}
-                                    actionEmitted={(e: any) => alert(e)}
+                                    actionEmitted={(e: any) => router.push(`/profiles/${victim.id}`)}
+
                                 />
                             ))
                             :
@@ -97,7 +100,7 @@ export function HomePage() {
 
                     }
                 </div>
-                <Button endContent={<FaArrowRightLong/>}>View All</Button>
+                <Button endContent={<FaArrowRightLong/>} onClick={() => router.push("/missing")}>View All</Button>
             </section>
 
 

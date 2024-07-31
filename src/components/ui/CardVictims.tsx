@@ -1,5 +1,5 @@
 import {Card, CardFooter, CardHeader} from "@nextui-org/card";
-import {Button} from "@nextui-org/react";
+import {Button, image} from "@nextui-org/react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -19,7 +19,7 @@ export default function CardVictims(props: {
             <Image
                 alt="Card example background"
                 className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-                src="https://nextui.org/images/card-example-6.jpeg"
+                src={props?.image || ''}
                 width={500}
                 height={500}
             />
